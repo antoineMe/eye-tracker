@@ -6,7 +6,7 @@ import org.bytedeco.javacv.OpenCVFrameConverter;
 import static org.bytedeco.javacpp.opencv_core.cvFlip;
  
 public class Main {
- public static void main(String[] args) {
+ public static void main(String[] args) {/*
   //Create canvas frame for displaying webcam.
      CanvasFrame canvas = new CanvasFrame("Webcam"); 
      OpenCVFrameConverter.ToIplImage converter = new OpenCVFrameConverter.ToIplImage();
@@ -43,6 +43,7 @@ public class Main {
        }
       }
      catch (Exception e) {      
-     }
+     }*/
+	 
     }
 }
