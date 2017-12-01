@@ -6,7 +6,8 @@ import org.bytedeco.javacv.OpenCVFrameConverter;
 import static org.bytedeco.javacpp.opencv_core.cvFlip;
  
 public class Main {
- public static void main(String[] args) {/*
+ public static void main(String[] args) {
+	 FaceDetection faceDetection = new FaceDetection();
   //Create canvas frame for displaying webcam.
      CanvasFrame canvas = new CanvasFrame("Webcam"); 
      OpenCVFrameConverter.ToIplImage converter = new OpenCVFrameConverter.ToIplImage();
@@ -38,12 +39,13 @@ public class Main {
          //Flip image horizontally
          cvFlip(img, img, 1);
         //Show video frame in canvas
+         faceDetection.detect(img);
          canvas.showImage(converter.convert(img));               
         }
        }
       }
      catch (Exception e) {      
-     }*/
+     }
 	 
     }
 }

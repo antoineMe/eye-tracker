@@ -16,7 +16,7 @@ public class FaceDetection{
 		detect(img);		
 	}	
 
-	public static void detect(IplImage src){
+	public static IplImage detect(IplImage src){
 		CvHaarClassifierCascade cascade = new 
 				CvHaarClassifierCascade(cvLoad("haarcascade_frontalface_default.xml"));
 		CvMemStorage storage = CvMemStorage.create();
@@ -45,8 +45,7 @@ public class FaceDetection{
 
 		}
 
-		cvShowImage("Result", src);
-		cvWaitKey(0);
+		return src;
 
 	}			
 }
